@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Emergency Map",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define=API_URL=http://ip-api.com/json/",
+                "--dart-define=API_KEY=AIzaSyAMJkHZYAdRyBykD5jRX13rXdCJKmx6hyQ"
+            ]
+        }
+    ]
+}
