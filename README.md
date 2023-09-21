@@ -89,6 +89,25 @@ But for production environments, put sensitive data such as our __API_KEY__ insi
 - Set ```--dart-define```  production values only in the __CI environment__.
 - Run __code obfuscation__ algorithms at production build time. [(Obfuscate Dart code)](https://docs.flutter.dev/deployment/obfuscate)
 
+## Run the application
+
+- Install [Flutter](https://docs.flutter.dev/get-started/install) (The project is using the __3.13.3__ version)
+- Setup an Android device / emulator
+
+Clone the project repository:
+ 
+```bash
+ $ git clone https://github.com/diogobh93/emergency-map
+```
+
+Open the project folder and run the following commands:
+  
+```bash
+$ flutter pub get
+
+$ bash flutter_run.sh
+```
+
 ## App Tests
 
 You can run the application Unit and Widget Tests by running the ```flutter_test_coverage.sh``` script wich will run all the tests, generate the __coverage/lcov.info__ and the __HTML report__.
