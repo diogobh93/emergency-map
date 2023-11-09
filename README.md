@@ -59,12 +59,12 @@ The application environment variables are setted by ```--dart-define``` strategy
 
 At this development environment you can find ```--dart-define```values inside ```flutter_run.sh``` script and VsCode ```launch.json``` file:
 
-**Security: API_KEY shown below will be deactivated soon**
+**Attention: enter your Google map key**
 
 ```bash
 flutter run -t lib/main.dart \
 --dart-define=API_URL=http://ip-api.com/json/ \
---dart-define=API_KEY=AIzaSyAMJkHZYAdRyBykD5jRX13rXdCJKmx6hyQ
+--dart-define=API_KEY= YOUR KEY
 ```
 
 
@@ -78,7 +78,7 @@ flutter run -t lib/main.dart \
             "type": "dart",
             "args": [
                 "--dart-define=API_URL=http://ip-api.com/json/",
-                "--dart-define=API_KEY=AIzaSyAMJkHZYAdRyBykD5jRX13rXdCJKmx6hyQ"
+                "--dart-define=API_KEY= YOUR KEY "
             ]
         }
     ]
