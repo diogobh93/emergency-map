@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
-import '../../../core/constants/app_color.dart';
 import '../../../core/constants/app_text.dart';
 import 'controller/controller.dart';
+import 'widgets/loading_widget.dart';
 import 'widgets/widgets.dart';
 
 class HomePage extends StatefulWidget {
@@ -27,12 +26,7 @@ class HomePageState extends State<HomePage> {
       builder: (BuildContext context, HomeState state, Widget? child) {
         switch (state.runtimeType) {
           case HomeStateLoading:
-            return Container(
-              color: AppColor.white,
-              child: const Center(
-                child: CircularProgressIndicator(),
-              ),
-            );
+            return const LoadingWidget();
           case HomeStateSuccess:
             return GoogleMapsWidget(
               onFetchLocation: () => widget.controller.getCurrentGeolocation(),
